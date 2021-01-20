@@ -1,0 +1,149 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-border",
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop",
+      "flex-layout.row#3-desktop"
+    ]
+  },
+  /*Logo, serch, acount, cart*/
+  "flex-layout.row#1-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "verticalAlign": "center",
+      
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    
+    },
+    "children": ["flex-layout.col#logo-desktop", 
+      "flex-layout.col#search-desktop", 
+      "header-spacer", 
+      "flex-layout.col#login-desktop",
+      "flex-layout.col#minicart-desktop" ]
+  },  
+  "flex-layout.col#logo-desktop":{ "children":["logo#desktop"],
+    "props":{"preventHorizontalStretch": true}
+  },
+  "flex-layout.col#search-desktop":{"children":["search-bar"]},
+  "flex-layout.col#login-desktop":{"children":["login"]},
+  "flex-layout.col#minicart-desktop":{"children":["minicart.v2"]},
+
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180"
+    }
+  },
+    "search-bar": {
+      "blocks": ["autocomplete-result-list.v2"],
+      "props": {
+        "openAutocompleteOnFocus": true
+      }
+    },
+    "login": {
+      "props": {
+        "emailAndPasswordTitle": "LOG-IN",
+        "accessCodeTitle": "Acess Code LOG-IN",
+        "emailPlaceholder": "e-mail",
+        "passwordPlaceholder": "password",
+        "showPasswordVerificationIntoTooltip": true
+      }
+    },
+
+  /*Menu category*/  
+    "flex-layout.row#2-desktop":{
+      "children":["vtex.menu@2.x:menu#category-menu"],
+      "props":{
+        "blockClass": "main-header",
+        "horizontalAlign": "center",
+        "verticalAlign": "center",
+        "preventHorizontalStretch": true,
+        "preventVerticalStretch": true,
+        "fullWidth": true
+      }
+    },
+    
+/* Notification bar*/
+  "flex-layout.row#3-desktop":{
+    "children":[
+      "notification.bar"
+    ],
+    "props":{
+      "fullWidth":true
+    }
+  },
+  "notification.bar":{
+    "props":{
+      "content":"Cuidemonos y evitemos el contagio #QuédateEnCasa"
+    }
+  },
+
+  /*mobile header*/
+  "header-layout.mobile": {
+    "children": ["flex-layout.row#1-mobile", "flex-layout.row#2-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "flex-layout.col#drawer-mobile",
+      "flex-layout.col#logo-mobile",
+      "flex-layout.col#login-mobile",
+      "flex-layout.col#minicart-mobile"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#drawer-mobile":{"children":["drawer"]},
+  "flex-layout.col#logo-mobile":{"children":["logo#mobile"]},
+  "flex-layout.col#login-mobile":{"children":["login"]},
+  "flex-layout.col#minicart-mobile":{"children":["minicart.v2"],
+    "props":{
+      "horizontalAlign":"right"
+    }},
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#category1",
+      "menu-item#category2",
+      "menu-item#category3",
+      "menu-item#category4",
+      "menu-item#category5",
+      "menu-item#category6",
+      "menu-item#category7"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "70"
+    }
+  },
+  "flex-layout.row#2-mobile":{
+    "children":[
+      "flex-layout.col#search-mobile"
+    ]
+  },
+  "flex-layout.col#search-mobile":{"children":["search-bar"]}
+}

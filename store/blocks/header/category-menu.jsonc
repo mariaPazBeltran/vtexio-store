@@ -1,0 +1,78 @@
+{
+
+    "vtex.menu@2.x:menu#category-menu":{
+        "children":[
+            "menu-item#category1",
+            "menu-item#category2",
+            "menu-item#category3",
+            "menu-item#category4",
+            "menu-item#category5",
+            "menu-item#category6",
+            "menu-item#category7"
+        ]
+      },
+      "menu-item#category1": {
+        "props": {
+          "type": "category",
+          "highlight": true,
+          "itemProps": {
+            "categoryId":7090
+          }
+        }
+      },
+      "menu-item#category2": {
+        "props": {
+          "type": "category",
+          "highlight": true,
+          "itemProps": {
+            "categoryId":7070
+          }
+        }
+      },
+      "menu-item#category3": {
+        "props": {
+          "type": "category",
+          "highlight": true,
+          "itemProps": {
+            "categoryId":7061
+          }
+        }
+      },
+      "menu-item#category4": {
+        "props": {
+          "type": "category",
+          "highlight": true,
+          "itemProps": {
+            "categoryId":7071
+          }
+        }
+      },
+      "menu-item#category5": {
+        "props": {
+          "type": "category",
+          "highlight": true,
+          "itemProps": {
+            "categoryId":7080
+          }
+        }
+      },
+      "menu-item#category6": {
+        "props": {
+          "type": "category",
+          "highlight": true,
+          "itemProps": {
+            "categoryId":4
+          }
+        }
+      },
+      "menu-item#category7": {
+        "props": {
+          "type": "category",
+          "highlight": true,
+          "itemProps": {
+            "categoryId":5
+          }
+        }
+      }
+  
+}

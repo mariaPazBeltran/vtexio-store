@@ -1,0 +1,62 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-desktop"
+    ]
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-mobile"
+    ]
+  },
+  "flex-layout.row#footer-desktop": {
+    "children": [
+      "flex-layout.col#socialnetworks",
+      "flex-layout.col#paymentmethods"
+    ],
+     "props":{
+      "fullWidth": false
+    }
+  },
+  /*mobile*/
+  "flex-layout.row#footer-mobile": {
+    "children": [
+      "flex-layout.col#socialnetworks",
+      "flex-layout.col#paymentmethods"
+    ]
+  },
+
+  "flex-layout.col#socialnetworks":{
+    "children":["social-networks"],
+    "props":{
+      "horizontalAlign":"left"
+    }
+  },
+  "flex-layout.col#paymentmethods":{
+    "children":["accepted-payment-methods"],
+    "props":{
+      "horizontalAlign":"right"
+    }
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://twitter.com/foo", "name": "Twitter" },
+        { "url": "https://linkedin.com/foo", "name": "linkedin" }
+      ],
+      "showInColor":true
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["mastercard", "visa", "diners club"],
+      "showInColor":true
+    }
+  }
+}
