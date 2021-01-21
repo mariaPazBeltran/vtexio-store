@@ -12,14 +12,12 @@
   },
   "flex-layout.row#footer1-desktop":{
     "children":[
-      "flex-layout.col#store-desktop"
+      "flex-layout.col#store-desktop",
+      "flex-layout.col#legal-desktop"
       
     ]
   },
   "flex-layout.col#store-desktop":{
-    "props":{
-      "border":"right"
-    },
     "children":[
       "rich-text#store",
       "vtex.menu@2.x:menu#store-menu"
@@ -33,8 +31,19 @@
     }
   },
 
-
-
+  "flex-layout.col#legal-desktop":{
+    "children":[
+      "rich-text#legal",
+      "vtex.menu@2.x:menu#legal-menu"
+    ]
+  },
+  "rich-text#legal": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "###### Institucional"
+    }
+  },
 
 
 
