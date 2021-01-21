@@ -6,8 +6,11 @@
         "children":[
             "menu-item#aboutus",
             "menu-item#news",
-            "menu-item#help",
-            "menu-item#faq"
+            "menu-item#problems",
+            "menu-item#locations",
+            "menu-item#buy",
+            "menu-item#delivery-coverage",
+            "menu-item#client"
         ]
     },
     "menu-item#aboutus":{
@@ -38,7 +41,77 @@
             }
           }
     },
-
+    "menu-item#problems":{
+        "props": {
+            "id": "menu-item-problems",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Problems",
+              "text": "Problemas con tu pedido"
+            }
+          }
+    },
+    "menu-item#locations":{
+        "props": {
+            "id": "menu-item-locations",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Locations",
+              "text": "Nuestras Tiendas"
+            }
+          }
+    },
+    "menu-item#buy":{
+        "props": {
+            "id": "menu-item-buy",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Buy",
+              "text": "Cómo comprar"
+            }
+          }
+    },
+    "menu-item#delivery-coverage":{
+        "props": {
+            "id": "menu-item-deliveryCoverage",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Delivery & Coverage",
+              "text": "Modos de entrega y cobertura"
+            }
+          }
+    },
+    "menu-item#client":{
+        "props": {
+            "id": "menu-item-client",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Client",
+              "text": "Servicio al cliente"
+            }
+          }
+    }
+/*
     "menu-item#help":{
         "props": {
             "id": "menu-item-help",
@@ -69,7 +142,7 @@
           }
     }
 
-
+*/
 
 
 }
