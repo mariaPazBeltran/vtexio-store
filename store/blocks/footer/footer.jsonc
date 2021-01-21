@@ -5,43 +5,39 @@
 
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer-desktop"
+      "flex-layout.row#footer1-desktop"
+      /*"flex-layout.row#footer2-desktop",
+      "flex-layout.row#footer3-desktop"*/
     ]
   },
-  "footer-layout.mobile": {
-    "children": [
-      "flex-layout.row#footer-mobile"
+  "flex-layout.row#footer1-desktop":{
+    "children":[
+      "flex-layout.col#store-desktop"
+      
     ]
   },
-  "flex-layout.row#footer-desktop": {
-    "children": [
-      "flex-layout.col#socialnetworks",
-      "flex-layout.col#paymentmethods"
-    ],
-     "props":{
-      "fullWidth": false
+  "flex-layout.col#store-desktop":{
+    "props":{
+      "border":"right"
+    },
+    "children":[
+      "rich-text#store",
+      "vtex.menu@2.x:menu#store-menu"
+    ]
+  },
+  "rich-text#store": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "###### Store"
     }
-  },
-  /*mobile*/
-  "flex-layout.row#footer-mobile": {
-    "children": [
-      "flex-layout.col#socialnetworks",
-      "flex-layout.col#paymentmethods"
-    ]
   },
 
-  "flex-layout.col#socialnetworks":{
-    "children":["social-networks"],
-    "props":{
-      "horizontalAlign":"left"
-    }
-  },
-  "flex-layout.col#paymentmethods":{
-    "children":["accepted-payment-methods"],
-    "props":{
-      "horizontalAlign":"right"
-    }
-  },
+
+
+
+
+
 
   "social-networks": {
     "props": {

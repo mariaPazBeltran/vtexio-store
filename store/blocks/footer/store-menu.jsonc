@@ -1,0 +1,75 @@
+{
+    "vtex.menu@2.x:menu#store-menu":{
+        "props": {
+            "orientation": "vertical"
+          },
+        "children":[
+            "menu-item#aboutus",
+            "menu-item#news",
+            "menu-item#help",
+            "menu-item#faq"
+        ]
+    },
+    "menu-item#aboutus":{
+        "props": {
+            "id": "menu-item-aboutus",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "AboutUs",
+              "text": "Sobre nosotros"
+            }
+          }
+    },
+    "menu-item#news":{
+        "props": {
+            "id": "menu-item-news",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "News",
+              "text": "Noticias"
+            }
+          }
+    },
+
+    "menu-item#help":{
+        "props": {
+            "id": "menu-item-help",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "external",
+              "href": "https://help.vtex.com/en/faq/what-is-vtex-io",
+              "noFollow": false,
+              "tagTitle": "help",
+              "text": "Ayuda"
+            }
+          }
+    },
+
+    "menu-item#faq":{
+        "props": {
+            "id": "menu-item-faq",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Faq",
+              "text": "Preguntas Frecuentes"
+            }
+          }
+    }
+
+
+
+
+}
