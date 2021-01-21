@@ -111,38 +111,6 @@
             }
           }
     }
-/*
-    "menu-item#help":{
-        "props": {
-            "id": "menu-item-help",
-            "type": "custom",
-            "iconId": null,
-            "itemProps": {
-              "type": "external",
-              "href": "https://help.vtex.com/en/faq/what-is-vtex-io",
-              "noFollow": false,
-              "tagTitle": "help",
-              "text": "Ayuda"
-            }
-          }
-    },
-
-    "menu-item#faq":{
-        "props": {
-            "id": "menu-item-faq",
-            "type": "custom",
-            "iconId": null,
-            "itemProps": {
-              "type": "internal",
-              "href": "#",
-              "noFollow": false,
-              "tagTitle": "Faq",
-              "text": "Preguntas Frecuentes"
-            }
-          }
-    }
-
-*/
 
 
 }

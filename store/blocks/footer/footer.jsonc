@@ -13,8 +13,8 @@
   "flex-layout.row#footer1-desktop":{
     "children":[
       "flex-layout.col#store-desktop",
-      "flex-layout.col#legal-desktop"
-      
+      "flex-layout.col#legal-desktop",
+      "flex-layout.col#help-desktop"
     ]
   },
   "flex-layout.col#store-desktop":{
@@ -27,7 +27,7 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "###### Store"
+      "text": "###### Tienda"
     }
   },
 
@@ -44,7 +44,19 @@
       "text": "###### Institucional"
     }
   },
-
+  "flex-layout.col#help-desktop":{
+    "children":[
+      "rich-text#help",
+      "vtex.menu@2.x:menu#help-menu"
+    ]
+  },
+  "rich-text#help": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "###### Centro de ayuda"
+    }
+  },
 
 
 
