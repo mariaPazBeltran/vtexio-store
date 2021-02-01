@@ -1,0 +1,116 @@
+{
+    "vtex.menu@2.x:menu#store-menu":{
+        "props": {
+            "orientation": "vertical"
+          },
+        "children":[
+            "menu-item#aboutus",
+            "menu-item#news",
+            "menu-item#problems",
+            "menu-item#locations",
+            "menu-item#buy",
+            "menu-item#delivery-coverage",
+            "menu-item#client"
+        ]
+    },
+    "menu-item#aboutus":{
+        "props": {
+            "id": "menu-item-aboutus",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "AboutUs",
+              "text": "Sobre nosotros"
+            }
+          }
+    },
+    "menu-item#news":{
+        "props": {
+            "id": "menu-item-news",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "News",
+              "text": "Noticias"
+            }
+          }
+    },
+    "menu-item#problems":{
+        "props": {
+            "id": "menu-item-problems",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Problems",
+              "text": "Problemas con tu pedido"
+            }
+          }
+    },
+    "menu-item#locations":{
+        "props": {
+            "id": "menu-item-locations",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Locations",
+              "text": "Nuestras Tiendas"
+            }
+          }
+    },
+    "menu-item#buy":{
+        "props": {
+            "id": "menu-item-buy",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Buy",
+              "text": "Cómo comprar"
+            }
+          }
+    },
+    "menu-item#delivery-coverage":{
+        "props": {
+            "id": "menu-item-deliveryCoverage",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Delivery & Coverage",
+              "text": "Modos de entrega y cobertura"
+            }
+          }
+    },
+    "menu-item#client":{
+        "props": {
+            "id": "menu-item-client",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "noFollow": false,
+              "tagTitle": "Client",
+              "text": "Servicio al cliente"
+            }
+          }
+    }
+
+
+}

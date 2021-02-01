@@ -1,0 +1,71 @@
+{
+        "vtex.menu@2.x:menu#legal-menu":{
+            "props": {
+                "orientation": "vertical"
+              },
+            "children":[
+                "menu-item#service",
+                "menu-item#privacy",
+                "menu-item#conditions",
+                "menu-item#bases"
+            ]
+        },
+        "menu-item#service":{
+            "props": {
+                "id": "menu-item-service",
+                "type": "custom",
+                "iconId": null,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "tagTitle": "Service",
+                  "text": "Condiciones de Servicio"
+                }
+              }
+        },
+        "menu-item#privacy":{
+            "props": {
+                "id": "menu-item-privacy",
+                "type": "custom",
+                "iconId": null,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "tagTitle": "Privacy",
+                  "text": "Políticas de Privacidad"
+                }
+              }
+        },
+    
+        "menu-item#conditions":{
+            "props": {
+                "id": "menu-item-conditions",
+                "type": "custom",
+                "iconId": null,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "tagTitle": "Conditions",
+                  "text": "Términos y Condiciones"
+                }
+              }
+        },
+        "menu-item#bases":{
+            "props": {
+                "id": "menu-item-bases",
+                "type": "custom",
+                "iconId": null,
+                "itemProps": {
+                  "type": "internal",
+                  "href": "#",
+                  "noFollow": false,
+                  "tagTitle": "Bases",
+                  "text": "Bases Legales"
+                }
+              }
+        }
+
+}
