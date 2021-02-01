@@ -5,61 +5,169 @@
 
   "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer1-desktop"
-      /*"flex-layout.row#footer2-desktop",
-      "flex-layout.row#footer3-desktop"*/
+      "flex-layout.row#footer1-desktop",
+      "flex-layout.row#footer2-desktop"
     ]
   },
   "flex-layout.row#footer1-desktop":{
+    "props":{
+      "verticalAlign": "top",
+      "horizontalAlign": "center",
+      "fullWidth":true
+    },
     "children":[
       "flex-layout.col#store-desktop",
       "flex-layout.col#legal-desktop",
-      "flex-layout.col#help-desktop"
+      "flex-layout.col#help-desktop",
+      "flex-layout.col#others-desktop"
     ]
   },
   "flex-layout.col#store-desktop":{
+    "props":{
+      "marginLeft":5
+    },
     "children":[
-      "rich-text#store",
-      "vtex.menu@2.x:menu#store-menu"
+      "flex-layout.row#store",
+      "flex-layout.row#menu-store"
     ]
   },
   "rich-text#store": {
     "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
+      
       "text": "###### Tienda"
     }
   },
+  "flex-layout.row#store":{
+    "children":[
+      "rich-text#store"
+    ]
+  },
+  "flex-layout.row#menu-store":{
+    "children":[
+      "vtex.menu@2.x:menu#store-menu"
+    ]
+  },
+
 
   "flex-layout.col#legal-desktop":{
     "children":[
-      "rich-text#legal",
-      "vtex.menu@2.x:menu#legal-menu"
+      "flex-layout.row#legal",
+      "flex-layout.row#menu-legal"
     ]
   },
   "rich-text#legal": {
     "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
+      
       "text": "###### Institucional"
     }
   },
+  "flex-layout.row#legal":{
+    "children":[
+      "rich-text#legal"
+    ]
+  },
+  "flex-layout.row#menu-legal":{
+    "children":[
+      "vtex.menu@2.x:menu#legal-menu"
+    ]
+  },
+
+
   "flex-layout.col#help-desktop":{
     "children":[
-      "rich-text#help",
-      "vtex.menu@2.x:menu#help-menu"
+      "flex-layout.row#help",
+      "flex-layout.row#menu-help"
     ]
   },
   "rich-text#help": {
     "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
+      
       "text": "###### Centro de ayuda"
     }
   },
+  "flex-layout.row#help":{
+    "children":[
+      "rich-text#help"
+    ]
+  },
+  "flex-layout.row#menu-help":{
+    "children":[
+      "vtex.menu@2.x:menu#help-menu"
+    ]
+  },
 
+  "flex-layout.col#others-desktop":{
+    "props":{
+      "border": "left",
+        "verticalAlign": "middle",
+        "horizontalAlign": "center"
+    },
+    "children":[
+      "flex-layout.row#others-followus",
+      "flex-layout.row#others-social",
 
+      "flex-layout.row#payments",
+      "flex-layout.row#others-paymentmethods"
+    ]
+  },
+  "flex-layout.row#others-followus":{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "rich-text#followus"
+    ]
+  },
+  "flex-layout.row#others-social":{
+  
+    "children":[
+      "social-networks"
+    ]
+  },
+  "flex-layout.row#payments":{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "rich-text#payments"
+    ]
+  },
+  "flex-layout.row#others-paymentmethods":{
+    "props":{
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "accepted-payment-methods"
+    ]
+  },
+  "rich-text#followus": {
+    "props": {
+    
+      "text": "###### Siguenos"
+    }
+  },
+  "rich-text#payments": {
+    "props": {
+      
+      "text": "###### Medios de pago"
+    }
+  },
 
+  "flex-layout.row#footer2-desktop":{
+    "children":[
+      "rich-text#copyright"
+    ]
+  },
+  "rich-text#copyright": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "###### Todos los derechos Reservados"
+    }
+  },
   "social-networks": {
     "props": {
       "socialNetworks": [
